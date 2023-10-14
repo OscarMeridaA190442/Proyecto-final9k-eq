@@ -27,7 +27,7 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="card">
                                     <a class="img-card" href="./vistas/agenda.php">
-                                        <img src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
+                                        <img src="./src/img/calendar.webp" />
                                     </a>
                                     <div class="card-content">
                                         <h4 class="card-title">
@@ -48,7 +48,7 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="card">
                                     <a class="img-card" href="./vistas/verdatosregistro.php">
-                                        <img src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s400/material%2Bnavbar.jpg" />
+                                        <img src="src/img/asistencia-banner.webp" />
                                     </a>
                                     <div class="card-content">
                                         <h4 class="card-title">
@@ -69,7 +69,7 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="card">
                                     <a class="img-card" href="./vistas/registroadmin.php">
-                                        <img src="https://4.bp.blogspot.com/-TDIJ17DfCco/Vtneyc-0t4I/AAAAAAAABmk/aa4AjmCvRck/s1600/cover.jpg" />
+                                        <img src="src/img/users.webp" />
                                     </a>
                                     <div class="card-content">
                                         <h4 class="card-title">
