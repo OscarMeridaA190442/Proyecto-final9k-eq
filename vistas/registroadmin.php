@@ -1,3 +1,14 @@
+<?php
+session_start();
+if ($_SESSION == null || $_SESSION = '') {
+    header("Location: ../login.php");
+    echo '<div style="position: absolute" class="alert alert-danger justify-content-center">NO TIENES ACCESO A LA PÁGINA</div>';
+    die();
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,16 +27,25 @@
     <h5>FACULTAD DE CONTADURÍA Y <br> ADMNISTRACIÓN C - I<br> </h5>
     <a href="../menuprincipal.php" type="button" class="btn btn-primary">Menú</a>
 </header>
-
-
-<body>
+        <!-- Alerta -->
+        <?php
+        if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'registrado') {
+        ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Correcto!</strong> Datos modificados correctamente.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <?php
+        }
+        ?>
+        <!-- Alerta -->
     <br>
 
     <body>
         <div containter class="fluid">
             <div id="formulario">
                 <h4>Datos del nuevo usuario</h4>
-                <form method="POST" action="registoad.php">
+                <form method="POST" action="registroad.php">
 
                     <input type="hidden" name="oculto" value="1">
 
@@ -48,6 +68,12 @@
             </div>
         </div>
     </body>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
     <br>
     <footer id="sticky-footer" class="bg-dark text-white py-2">
         <div class="container text-center">
